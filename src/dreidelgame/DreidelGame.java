@@ -1,5 +1,8 @@
 package dreidelgame;
 
+import javax.swing.*;
+import java.awt.*;
+
 /**
  * Created by ilana on 1/26/2017.
  */
@@ -20,6 +23,16 @@ public class DreidelGame {
      */
 
     public static void main(String[] args) {
+        //Creating user interface.
+        JFrame window = new JFrame();
+        window.setSize(640, 480);
+        window.setTitle("Dreidel Game");
+        window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        window.setVisible(true);
+
+        drawingComponent DC = new drawingComponent();
+        window.add(DC);
+
         //int count = 0;
 
         //for(int i = 0; i<1000000; i++) {
